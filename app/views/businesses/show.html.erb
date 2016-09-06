@@ -1,0 +1,12 @@
+<h1><%= @business.name %></h1>
+<hr>
+<ul>
+  <li>phone number: <%= @business.phone %></li>
+  <li>address : <%= @business.address %></li>
+  <li>website : <%= @business.website %></li>
+  <li>hours : <%= @business.hours %></li>
+</ul>
+
+<p>
+  <%= link_to @business.type.name, type_path(@business.type) %>
+</p>
